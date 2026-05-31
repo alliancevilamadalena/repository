@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repositório de Links — Alliance Vila Madalena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e1a;--card:#141d33;--card-hover:#1a2742;--line:#243352;
+    --blue:#2b6cff;--blue-soft:#5b8cff;--gold:#e8b04b;--text:#e8edf7;--muted:#8a98b8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'Inter',sans-serif;
+    background:
+      radial-gradient(900px circle at 15% -5%, rgba(43,108,255,.18), transparent 45%),
+      radial-gradient(700px circle at 100% 0%, rgba(232,176,75,.07), transparent 40%),
+      var(--bg);
+    color:var(--text);min-height:100vh;padding:48px 24px 80px;
+  }
+  .wrap{max-width:1180px;margin:0 auto}
+  header{margin-bottom:48px;border-bottom:1px solid var(--line);padding-bottom:32px}
+  .badge{
+    display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:600;
+    letter-spacing:.22em;text-transform:uppercase;font-size:13px;color:var(--gold);
+    border:1px solid rgba(232,176,75,.35);padding:5px 14px;border-radius:40px;margin-bottom:20px;
+  }
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(2.4rem,5vw,3.8rem);
+    line-height:1;letter-spacing:.01em;text-transform:uppercase;}
+  h1 span{color:var(--blue-soft)}
+  .sub{color:var(--muted);font-size:1.05rem;margin-top:14px;max-width:620px}
+  .cat{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;
+    letter-spacing:.12em;font-size:1.35rem;color:var(--text);
+    margin:46px 0 22px;display:flex;align-items:center;gap:14px;}
+  .cat::after{content:"";flex:1;height:1px;background:var(--line)}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));}
+  .card{position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:16px;padding:26px 24px 24px;text-decoration:none;color:inherit;
+    display:flex;flex-direction:column;gap:12px;overflow:hidden;
+    transition:transform .25s ease, border-color .25s ease, background .25s ease;}
+  .card::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--blue);
+    transform:scaleY(0);transform-origin:top;transition:transform .3s ease;}
+  .card:hover{transform:translateY(-4px);border-color:var(--blue);background:var(--card-hover)}
+  .card:hover::before{transform:scaleY(1)}
+  .card-icon{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;
+    background:rgba(43,108,255,.14);color:var(--blue-soft);font-size:20px;
+    border:1px solid rgba(43,108,255,.25);}
+  .card h3{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1.4rem;
+    letter-spacing:.01em;line-height:1.1;}
+  .card p{color:var(--muted);font-size:.94rem;line-height:1.5;flex:1}
+  .card .go{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:600;
+    color:var(--blue-soft);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+  .card .go svg{transition:transform .25s ease}
+  .card:hover .go svg{transform:translateX(4px)}
+  footer{margin-top:64px;text-align:center;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="badge">Alliance · Vila Madalena</span>
+    <h1>Repositório de <span>Links</span></h1>
+    <p class="sub">Acesso rápido às páginas e recursos da academia. Clique em qualquer card para abrir o link.</p>
+  </header>
+
+  <div class="cat">Aulas &amp; Planos</div>
+  <div class="grid">
+
+    <a class="card" href="https://alliancevilamadalena.github.io/aulas-programas/Junho_2026wg.html" target="_blank" rel="noopener">
+      <div class="card-icon">🗓️</div>
+      <h3>Programa de Aulas — Junho 2026</h3>
+      <p>Programação e grade de aulas do mês de junho de 2026.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://alliancevilamadalena.github.io/aulas-programas/convites.html" target="_blank" rel="noopener">
+      <div class="card-icon">✉️</div>
+      <h3>Convites</h3>
+      <p>Convites e comunicados para eventos e atividades da academia.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://alliancevilamadalena.github.io/planos/Junho_2026.html" target="_blank" rel="noopener">
+      <div class="card-icon">💳</div>
+      <h3>Planos — Junho 2026</h3>
+      <p>Planos e mensalidades disponíveis no mês de junho de 2026.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://alliancevilamadalena.github.io/kimonos/Valores_Tabela_Junho.html" target="_blank" rel="noopener">
+      <div class="card-icon">🥋</div>
+      <h3>Kimonos — Tabela de Valores</h3>
+      <p>Tabela de preços de kimonos referente ao mês de junho.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+  </div>
+
+  <div class="cat">Exames de Faixa</div>
+  <div class="grid">
+
+    <a class="card" href="https://alliancevilamadalena.github.io/alliance-exames/Alliance_Vila_Madalena_Professores.html" target="_blank" rel="noopener">
+      <div class="card-icon">🎓</div>
+      <h3>Exame — Professores</h3>
+      <p>Área dos professores para avaliação e registro dos exames de faixa.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://alliancevilamadalena.github.io/alliance-exames/Alliance_Vila_Madalena_Alunos.html" target="_blank" rel="noopener">
+      <div class="card-icon">📋</div>
+      <h3>Exame — Alunos</h3>
+      <p>Página de inscrição e informações do exame de faixa para os alunos.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://alliancevilamadalena.github.io/alliance-exames/Alliance_Vila_Madalena_Faixa_Preta.html" target="_blank" rel="noopener">
+      <div class="card-icon">⬛</div>
+      <h3>Exame — Faixa Preta</h3>
+      <p>Página específica do exame de faixa preta.</p>
+      <span class="go">Acessar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+  </div>
+
+  <footer>Alliance Jiu Jitsu · Vila Madalena</footer>
+
+</div>
+</body>
+</html>
